@@ -1,0 +1,148 @@
+:root{
+    --PaleViolet : hsl(276, 100%, 81%);/*(sub-heading at the top of the app UI)*/
+--ModerateViolet : hsl(276, 55%, 52%);/*(chat on the left)*/
+--DesaturatedDarkViolet : hsl(271, 15%, 43%);/*(chat on the right)*/
+--GrayishBlue : hsl(206, 6%, 79%);/*(placeholder text)*/
+--VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);/* (main heading)*/
+--DarkGrayishViolet : hsl(270, 7%, 64%);/*(paragraph)*/
+/* Gradients */
+--LightMagenta: hsl(293, 100%, 63%);
+--LightViolet: hsl(264, 100%, 61%);
+/* secondary */
+--White: hsl(0, 0%, 100%);
+--LightGrayishViolet : hsl(270, 20%, 96%);/*(app background)*/
+--VeryDarkDesaturatedViolet : hsl(271, 36%, 24%);/*(submit button background)*/
+--VeryLightMagenta : hsl(289, 100%, 72%);/*(radio button outline)*/
+
+--font:'Rubik', sans-serif;
+}
+
+*{
+    font-family: var(--font);
+   
+}
+.font-title{
+    font-weight: 700;
+}
+.font-text{
+    font-weight: 400;
+}
+.font-500{
+    font-weight: 500;
+}
+
+.pos-relative{
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}  
+.bg-hero{
+    background: linear-gradient(to top right,hsl(264, 100%, 61%) 70%,hsl(293, 100%, 63%)  ) no-repeat;    
+        background-size: 260px 700px;
+        height: 700px;
+        width: 260px;
+        background-repeat: none;
+        border-bottom-left-radius:350px ;
+        border-bottom-right-radius: 400px; 
+}
+.card-color1{
+    background:linear-gradient(to right,var(--LightViolet) 60%,var(--LightMagenta));
+}
+.border_radius{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.header_img{
+    border-radius: 50%;
+    border: 4px solid rgb(152, 151, 151);
+}
+.border_radius-mobile{
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px black;
+}
+.font-16{
+    font-size: 16px;
+}
+.margin_text{
+    margin-top: 300px;
+    text-align: center;
+}
+.chat1{
+    background-color: rgb(201, 189, 189);
+    font-size: 12px;
+    border-radius: 10px;
+    color: var(--LightViolet);
+}
+.chat3{
+    background-color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    color: black;
+}
+.chat2 img{
+    border-radius: 5px;
+}
+
+.bg-chat{
+    background-color: rgb(239, 235, 235);
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* button style */
+.button1{
+    color: white;
+    font-size: 12px;
+    background: linear-gradient(to right,var(--LightMagenta),var(--LightViolet));
+    border-radius: 10px;
+}
+.button1:hover{
+    color: white;
+    background: linear-gradient(to right,var(--LightViolet),var(--LightMagenta));
+    border-radius: 10px;
+    cursor: pointer;
+}
+input{
+    border-radius:30px;
+    border: none;
+    outline: none;
+}
+
+.circle{
+    color: white;
+    background-color: var(--VeryDarkDesaturatedViolet);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 265px;
+}
+
+@media screen and (min-width:1200px) {
+    .pos-relative{
+        position: absolute;
+        right: 300px;
+        top: 100px;
+    }  
+    .bg-hero{
+        background: linear-gradient(to top right,hsl(264, 100%, 61%) 70%,hsl(293, 100%, 63%)  ) no-repeat;    
+        background-size: 550px 880px;
+        height: 880px;
+        width: 550px;
+        background-repeat: none;
+        border-bottom-left-radius:350px ;
+        border-bottom-right-radius: 400px;
+    }
+    .margin_text{
+        margin-top: 0px;
+        text-align: left;
+    }
+}
